@@ -1,536 +1,449 @@
-
-
 <!DOCTYPE html>
-<html lang="en" color-mode=light>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>独有档案馆-Duyou.org</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="google" content="notranslate" />
-  
-  
-  <meta name="author" content="Admin">
-  <link rel="icon" href="/images/icons/ico.svg" type="image/png" sizes="16x16">
-  <link rel="icon" href="/images/icons/ico.svg" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/images/icons/ico.svg" sizes="180x180">
-  <meta rel="mask-icon" href="/images/icons/ico.svg" color="#333333">
-  
-    <meta rel="msapplication-TileImage" content="/images/icons/ico.svg">
-    <meta rel="msapplication-TileColor" content="#000000">
-  
-
-  
+<html lang="en">
+    <head>
+        
+        <title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/MicroMetainfo/jsCDN@main/lo.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/MicroMetainfo/jsCDN@main/lo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/MicroMetainfo/jsCDN@main/lo.svg">
+<link rel="manifest" href="/site.webmanifest">
 
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">中文博客 来林在线 EnLigne.cn</a>
+            </div>
+        </div>
 
-  
-    
-<link rel="stylesheet" href="/cdn/font_1445822_p6ry5n7lrr.css">
-
-  
-
-  
-    
-<link rel="stylesheet" href="/cdn/3.5.7/jquery.fancybox.min.css">
-
-  
-
-  
-    
-      
-        
-        
-<link rel="stylesheet" href="/cdn/xcode.min.css" name="highlight-style" mode="light">
-
-      
-        
-        
-<link rel="stylesheet" href="/cdn/solarized-dark.min.css" name="highlight-style" mode="dark">
-
-      
-  
-
-  <script>
-    var CONFIG = window.CONFIG || {};
-    var ZHAOO = window.ZHAOO || {};
-    CONFIG = {
-      isHome: true,
-      fancybox: true,
-      pjax: false,
-      loading: {
-        gif: '/images/theme/loading.gif',
-        lottie: ''
-      },
-      lazyload: {
-        enable: true,
-        only_post: 'false',
-        loading: {
-          gif: '/images/theme/loading.gif',
-          lottie: ''
-        }
-      },
-      donate: {
-        enable: false,
-        alipay: 'https://pic.izhaoo.com/alipay.jpg',
-        wechat: 'https://pic.izhaoo.com/wechat.jpg'
-      },
-      galleries: {
-        enable: true
-      },
-      fab: {
-        enable: true,
-        always_show: false
-      },
-      carrier: {
-        enable: true
-      },
-      daovoice: {
-        enable: false
-      },
-      preview: {
-        background: {
-          default: '',
-          api: ''
-        },
-        motto: {
-          default: '我在开了灯的床头下，想问问自己的心啊。',
-          typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
-          data_contents: '["data","content"]'
-        },
-      },
-      qrcode: {
-        enable: false,
-        type: 'url',
-        image: 'https://pic.izhaoo.com/weapp-code.jpg',
-      },
-      toc: {
-        enable: true
-      },
-      scrollbar: {
-        type: 'default'
-      },
-      notification: {
-        enable: false,
-        delay: 4500,
-        list: '',
-        page_white_list: '',
-        page_black_list: ''
-      },
-      search: {
-        enable: false,
-        path: ''
-      }
-    }
-  </script>
-
-  
-
-  
-
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body class="lock-screen">
-  <div class="loading" id="loading"></div>
-  
-    
-
-
-  <nav class="navbar">
-    <div class="left">
-      
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-      
-    </div>
-    <div class="center"> </div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
-    </div>
-    
-  </nav>
-
-  
-  
-
-<nav class="menu">
-  <div class="menu-container">
-    <div class="menu-close">
-      <i class="iconfont iconbaseline-close-px"></i>
-    </div>
-    <ul class="menu-content"><li class="menu-item">
-        <a href="/ " class="underline active"> 首页</a>
-      </li><li class="menu-item">
-        <a href="/galleries/ " class="underline "> 摄影</a>
-      </li><li class="menu-item">
-        <a href="/archives/ " class="underline "> 归档</a>
-      </li><li class="menu-item">
-        <a href="/tags/ " class="underline "> 标签</a>
-      </li><li class="menu-item">
-        <a href="/categories/ " class="underline "> 分类</a>
-      </li><li class="menu-item">
-        <a href="/about/ " class="underline "> 关于</a>
-      </li></ul>
-    
-      <div class="menu-copyright"><p>Powered by <a target="_blank" >Hexo</a>  |  Theme - <a target="_blank" >zhaoo</a></p></div>
-    
-  </div>
-</nav>
-  <main id="main">
-  
-    <div class="preview">
-  <!-- <nav class="navbar j-navbar-menu">
-    <i class="iconfont iconmenu"></i>
-  </nav> -->
-  <div class="preview-image">
-    
-        
-              <div class="preview-overlay">
-                <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                  <defs>
-                    <path id="gentle-wave"
-                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                  </defs>
-                  <g class="preview-parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(var(--color-background-rgb),0.7"></use>
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(var(--color-background-rgb),0.5)"></use>
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(var(--color-background-rgb),0.3)"></use>
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--color-background)"></use>
-                  </g>
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
                 </svg>
-              </div>
-              
-  </div>
-  <div class="preview-motto-wrapper">
-    <h2 class="preview-motto" id="motto">
-      
-    </h2>
-    
-      <span class="preview-cursor">_</span>
-      
-  </div>
-  <div class="preview-scroll">
-    <a href="#container" class="smooth-scroll"><i class="iconfont iconMouse"></i></a>
-  </div>
-</div>
-  
-  <div class="container" id="container">
-    <section class="row post">
-  
-    
-
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/ws-7/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1668463876833-339717e58c4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDUzOA&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/ws-7/" title="事往日迁中学篇之独特的气味：已完结" >事往日迁中学篇之独特的气味：已完结</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">前言
-关于我写作也有一段时间了，
-我还是在这里说明下，内容由真实事件改编后虚构的。
-真实信息也已经匿名化了。
-
-正文在那空气清新的早晨，被一场突如其来的请问给惊醒。一股浓浓的气味，在冬天的教室里...</p>
+            </div>
         </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>November 05, 2022</span>
-        
-      </div>
     </div>
-  </div>
-</div>
+</header>
 
-  
-    
+        <div class="al_sidebar">
 
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/ws-6/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1666644611406-b67537c5ead9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDUxMw&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/ws-6/" title="停更公告" >停更公告</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">因面临学业问题，目前2022年10月30日至2022年11月4日暂停更新《事往日迁中学篇》等项目，感谢支持。
-反馈邮箱：&#110;&#x69;&#99;&#64;&#116;&#x6f;&#x...</p>
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>中文博客 来林在线 EnLigne.cn</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
         </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 30, 2022</span>
-        
-      </div>
-    </div>
-  </div>
-</div>
 
-  
-    
+        <div class="al_sidebar_author_cnt">
 
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/ws-5/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1668237611104-713f901b60b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDQ5NQ&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/ws-5/" title="事往日迁中学篇（第四章）" >事往日迁中学篇（第四章）</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">
-自然的魅力帅气的大哥，走着六亲不认的步伐，冬天迎面吹来的冷风，从中夹杂着秦始皇问着都会复活的一股浓浓的气味，就连蓝色妖姬见了都会礼让三分，就连美国军事专家麦克阿瑟都直呼上帝去让我去阻止这个味道...</p>
+            <div class="al_sidebar_author_info">
+                <h4>EnLigne.cn</h4>
+                <img class="al_sidebar_avatar" src="https://cdn.jsdelivr.net/gh/MicroMetainfo/jsCDN@main/logo1.png">
+                <p></p>
+            </div>
+
+            
+                <div class="al_sidebar_contact_info">
+                    <h4>GET IN TOUCH</h4>
+                    <p>A creative thinker who strives for improvement and perfection. Mailbox: alpha@micrometa.info</p>
+
+                    <div class="dis_flex al_sidebar_social_widget">
+                        
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            
         </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 27, 2022</span>
-        
-      </div>
     </div>
-  </div>
 </div>
 
-  
-    
-
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/ws-4/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1666458250401-454ba9c59356?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDQzOA&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/ws-4/" title="事往日迁中学篇（第三章）" >事往日迁中学篇（第三章）</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">人见人爱，花见花开没错，车见车爆胎的Yello，这里暂且成为Y哥，字母Y。
-这位大哥没什么好说的，😑除了白了点，但这也是他个人的特点之一。
-这不是重点，⚠️ 撩妹属班级一流的，要他微信的可以找...</p>
+        
+    <div class="al_index_background dis_flex_center al_full_cover">
+        <div class="al_pos_ab al_letter al_index_background_letter">
+            E
         </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 26, 2022</span>
-        
-      </div>
+        <h2 class="al_index_background_bio">
+            EnLigne.cn
+        </h2>
     </div>
-  </div>
-</div>
-
-  
-    
-
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/ws-3/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1667848015080-00ee6e487bc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDQwOA&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/ws-3/" title="事往日迁中学篇（第二章）" >事往日迁中学篇（第二章）</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">
-班主任关于这个班主任呢，思想和思维按照我们年轻人的说法就是“太古板”，做事情看着和严格，对，看着，实际上他根本不想管，他年纪有点大了，大概是快退休了，他交了我们三年语文，第一年他还是班主任，后...</p>
+    <div class="al_index_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow">
+            <div class="al_section_container dis_flex_jcenter">
+                <div class="section_header">
+                    LATEST PAGES
+                </div>
+            </div>
+            <ul class="al_post_list">
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                A
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/about-me/">
+                                    About - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-11-20 09:31:48
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/about-me/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/about-me/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                事
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/ws-7/">
+                                    事往日迁中学篇之独特的气味：已完结 - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-11-05 11:56:17
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/ws-7/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/ws-7/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                2
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/note1/">
+                                    2022 10 30 停更公告 - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-10-30 13:40:09
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/note1/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/note1/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                事
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/ws-5/">
+                                    事往日迁中学篇（第四章） - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-10-27 21:59:53
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/ws-5/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/ws-5/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                事
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/ws-4/">
+                                    事往日迁中学篇（第三章） - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-10-26 22:44:27
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/ws-4/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/ws-4/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                事
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/ws-3/">
+                                    事往日迁中学篇（第二章） - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-10-26 12:53:38
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/ws-3/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/ws-3/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                事
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/ws-2/">
+                                    事往日迁中学篇（第一章） - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-10-25 12:08:45
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/ws-2/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/ws-2/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                事
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/ws-1/">
+                                    事往日迁中学篇（介绍） - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-10-23 11:02:57
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/ws-1/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/ws-1/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                关
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="/aboutnotice/">
+                                    关于我的博客问题 - EnLigne.cn
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    2022-10-04 12:30:10
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="/aboutnotice/">
+                                点击阅读
+                            </a>
+                            <a
+                                class="al_button al_button_transparent al_index_post_button"
+                                target="_blank" rel="noopener" href="//getpocket.com/edit?url=https://enligne.cn/aboutnotice/">
+                                稍后阅读
+                            </a>
+                        </div>
+                    </li>
+                
+            </ul>
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
+                    
+                </a>
+            </nav>
         </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 26, 2022</span>
-        
-      </div>
     </div>
-  </div>
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        EnLigne.cn
+    </div>
+
+    
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a>AcetoLog</a>
+         · Power By 
+        <a>Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
 </div>
 
-  
-    
-
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/ws-2/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1668403783887-8247fc25b966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDMyMA&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/ws-2/" title="事往日迁中学篇（第一章）" >事往日迁中学篇（第一章）</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">
-前言全面介绍过了几个关键的人物，接着我会写关于在这学校待了三年的经过，后面的几章将不会有“前言”，我将直接写出重点，*号代替违规子字，XX代表某某，英文字母代表人名缩写。对于有需要联系我的，电...</p>
-        </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 25, 2022</span>
+        <script type="text/javascript" async="async" src="/javascripts/acelog.js"></script>
         
-      </div>
-    </div>
-  </div>
-</div>
-
-  
-    
-
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/ws-1/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1666985127411-6b354a774c03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDI5OQ&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/ws-1/" title="事往日迁中学篇（介绍）" >事往日迁中学篇（介绍）</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">
-前言经常提笔忘字，其实早在20年的时候就想开始写的，拖到现在，有点离谱。中学都毕业了，往事确实有点不堪回首，我尽量挑几个我还记得的片段，全文无匿名除真实姓名外，真实故事，无绰号的拼音首字母代替...</p>
-        </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 23, 2022</span>
         
-      </div>
-    </div>
-  </div>
-</div>
-
-  
-    
-
-<div class="col-lg-4 col-md-6 col-sm-12 post-item">
-  <div class="post-wrap">
-    
-    <a href="/2022/aboutnotice/" class="post-image">
-      <img   class="lazyload" data-original="https://images.unsplash.com/photo-1667077770557-a4ebd886140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2ODkxMDIxOA&ixlib=rb-4.0.3&q=80&w=1080" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-    </a>
-    <div class="post-content">
-      <div class="post-content-wrap">
-        <h3 class="post-title"><a href="/2022/aboutnotice/" title="关于我的博客问题" >关于我的博客问题</a></h3>
-        <div class="post-excerpt">
-          <p class="substr-3">版权问题关于版权问题看页脚，图片文字等均会在文章底部著名版权信息，未填写的均为Toknik版权所有，且禁止转载。
-SSL加密问题现在流行https全站加密，为什么我的没有，首先是我的网站类型是博...</p>
-        </div>
-      </div>
-      <div class="post-info">
-        <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 04, 2022</span>
         
-      </div>
-    </div>
-  </div>
-</div>
+        
+        
 
-  
-</section>
-    <section class="paginator">
-  
-</section>
-  </div>
-</main>
-  
-
-<footer class="footer">
-  <div class="footer-social"><a 
-        href="https://github.com/injavascript "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#9f7be1'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  icongithub-fill "></i>
-      </a><a 
-        href="mailto:emails-report@aisoft.pro "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color=#FF3B00" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconmail"></i>
-      </a></div>
-  
-    <div class="footer-copyright"><p>Powered by <a target="_blank" >Hexo</a>  |  Theme - <a target="_blank" >zhaoo</a></p></div>
-  
-</footer>
-  
-      <div class="fab fab-plus">
-    <i class="iconfont iconplus"></i>
-  </div>
-  
-  
-  
-  <div class="fab fab-up">
-    <i class="iconfont iconcaret-up"></i>
-  </div>
-  
-  
-  
-    
-<script src="/js/color-mode.js"></script>
-
-  
-  
-</body>
-
-<script src="/cdn/jquery-3.6.0.min.js"></script>
-
-
-
-
-
-  
-<script src="/cdn/jquery.lazyload.min.js"></script>
-
-
-
-
-  
-<script src="/cdn/jquery.fancybox.min.js"></script>
-
-
-
-
-
-
-
-
-<script src="/js/utils.js"></script>
-<script src="/js/script.js"></script>
-
-
-
-
-
-
-
-  <script>
-    (function () {
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      } else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </body>
 </html>
